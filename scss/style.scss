@@ -6,6 +6,8 @@ $fontWeightBold: 700;
 
 $baseFontSize: 16px;
 
+import
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -479,19 +481,7 @@ body {
 /*===========END стили footer END================*/
 /*============================================*/
 
-.btn {
-	background-color: #fb565a;
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 18px;
-    padding: 16px 40px;
-    border-radius: 3px;
-    font-family: $fontFamily;
-    font-weight: $fontWeightMedium;
-}
+
 
 /*===========================================*/
 /*=========== стили магазин ================*/
