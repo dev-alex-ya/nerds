@@ -1,0 +1,20 @@
+{
+  "name": "nerds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ya_alex@bitbucket.org/ya_alex/nerds.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ya_alex/nerds#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
