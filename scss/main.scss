@@ -1,0 +1,131 @@
+/*============================================*/
+/*=========== стили main ================*/
+.service {
+  /*border: #fb565a dotted 1px;*/
+  width: 300px;
+  float: left;
+  margin-right: 100px;
+  margin-bottom: 160px;
+}
+
+.service:nth-child(3) {
+  margin-right: 54px;
+}
+
+.service img {
+  margin-bottom: 30px;
+}
+
+.service-title {
+  font-size: $baseFontSize * 1.5;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: $fontWeightBold;
+  font-family: $fontFamily;
+}
+
+.service p {
+  font-size: $baseFontSize;
+  line-height: 24px;
+  font-weight: $fontWeightNormal;
+  font-family: $fontFamily;
+  margin-bottom: 40px;
+}
+
+.service:nth-child(1) .btn {
+  background-color: #fb565a;
+}
+.service:nth-child(2) .btn {
+  background-color: #00ca74;
+}
+.service:nth-child(3) .btn {
+  background-color: #efc84a;
+}
+
+
+.features {
+  /*border: #fb565a dotted 1px;*/
+  width: 1160px;
+  font-family: $fontFamily;
+}
+
+.features-left{
+  float: left;
+  width: 660px;
+  font-size: $baseFontSize;
+  line-height: 24px;
+}
+
+.features-left p {
+  margin-bottom: 42px;
+}
+
+.features-left ul {
+  list-style-type: none;
+}
+
+.features-left li {
+  margin-bottom: 30px;
+}
+.features-left li:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -20px;
+  color: #fb565a;
+}
+
+.features-right{
+  float: right;
+  width: 360px;
+}
+
+.features-title {
+  color: black;
+  font-weight: $fontWeightMedium;
+  font-family: $fontFamily;
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 36px;
+}
+
+.features-list-header {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: $fontFamily;
+  line-height: 24px;
+  font-size: $baseFontSize;
+  margin-bottom: 50px;
+}
+
+.features-promo-list {
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.features-promo-list li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 0;
+  width: 100px;
+}
+
+.features-promo-list li:nth-child(3) {
+  margin-right: 0;
+}
+
+.features-promo-list span {
+  font-size: 46px;
+  line-height: 46px;
+  font-weight: $fontWeightBold;
+  font-family: $fontFamily;
+}
+.features-promo-list p {
+  font-size: $baseFontSize;
+  line-height: 18px;
+  font-weight: $fontWeightNormal;
+  font-family: $fontFamily;
+}
+/*=========== стили main ================*/
+/*============================================*/
