@@ -1,0 +1,128 @@
+/*Templates block*/
+.section-name {
+	/*border: #00ca74 1px solid;*/
+	width: 160px;
+	line-height: 30px;
+	font-size: 18px;
+	font-family: var(--fontFamily);
+}
+.sort-section {
+	/*border: #00ca74 1px solid;*/
+	width: 364px;
+	font-size: 0;
+}
+
+.sort-section ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sort-section li {
+	display: inline-block;
+	/*border: #ff4c05 1px solid;*/
+	text-transform: uppercase;
+	color: #cacaca;
+	font-family: --fontFamily;
+	font-weight: --fontWeightNormal;
+	font-size: 14px;
+	line-height: 18px;
+	margin-right: 20px;
+}
+
+.sort-section li:nth-child(3) {
+	margin-right: 0;
+}
+
+.sort-section .checked {
+	color: #000000;
+}
+
+
+.templates-block {
+	width: 766px;
+	/*border: black 1px solid;*/
+}
+
+.templates-header{
+	width:100%;
+	margin-bottom: 40px;
+}
+
+.templates-cards {
+	margin: 0 -20px;
+}
+
+.sort-toggle {
+	/*border: #ff4c05 1px solid;*/
+	width: 40px;
+	height: 18px;
+	text-align: right;
+}
+.sort-toggle span {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 9px solid rgba(0,0,0,0);
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+}
+
+.sort-toggle .arrow-top {
+	border-bottom: 9px solid #cccccc;
+	position: relative;
+	top: -5px;
+	right: 0px;
+}
+
+.sort-toggle .arrow-bottom {
+	border-top: 9px solid #cccccc;
+	position: relative;	
+	top: 5px;
+	right: 15px;
+}
+
+.sort-toggle .arrow-top.checked {
+	border-bottom: 9px solid #000000;
+}
+
+.sort-toggle .arrow-bottom.checked {
+	border-top: 9px solid #000000;
+}
+
+.template {
+	position: relative;
+	background-color: #ffffff;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 35px;
+	border: #e9e9e9 1px solid;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.template-header {
+	background-color: #e9e9e9;
+	height: 40px;
+}
+
+
+
+.template-body{
+  font-size: 0;
+}
+
+
+.template-controls {
+	position: relative;
+	left: 15px;
+	top: 13px;
+}
+
+.template-controls i {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-color: white;
+	margin-right: 9px;
+	border-radius: 50%
+}

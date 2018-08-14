@@ -1,65 +1,206 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>NERDS</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900,900i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-<header class="header">
-    <div class="container">
-        <div class="top-bar clearfix">
-            <nav class="main-navigation">
-                <a class="logo-inner" href="index.html">
-                    <img src="img/nerds-logo.png" width="161" height="65" alt="Nerds">
-                </a>
-                <ul>
-                    <li><a href="#">Студия</a></li>
-                    <li><a href="#">Клиенты</a></li>
-                    <li><a href="#">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="basket-block">
-                <a class="basket" href="#">Корзина</a>
+    <head>
+        <meta charset="UTF-8">
+        <title>NERDS</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900,900i" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/style-filter.css">
+    </head>
+    <body>
+        <header class="header">
+           <div class="container">
+                <div class="top-bar clearfix">
+                    <nav class="main-navigation left">
+                        <a class="logo-inner left" href="index.html">
+                            <img src="img/nerds-logo.png" width="161" height="65" alt="Nerds">
+                        </a>
+                        <ul>
+                            <li><a href="#">Студия</a></li>
+                            <li><a href="#">Клиенты</a></li>
+                            <li><a href="catalog.html">Магазин</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="basket-block right">
+                        <a class="basket" href="#">Корзина</a>
+                    </div>
+                </div>
+           </div>
+        </header>
+        <main class="container clearfix">
+            <!--START ФИЛЬТР-->
+            <form class="left filter clearfix" method="post" action="#">
+                <div class="filter-section filter-range clearfix">
+                    <div class="section-name">Стоимость:</div>
+                    <div class="range ">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div style="width: 70%;" class="bar"></div>
+                            </div>
+                            <div class="toggle min-toggle">
+
+                            </div>
+                            <div class="toggle max-toggle"></div>
+                        </div>
+                        <div class="price-controls">
+                            <label class="label-min">
+                                от <input name="min-price" class="min-price" type="text" value="0">
+                            </label>
+                            <label class="label-max">
+                                до <input name="max-price" class="max-price" type="text" value="15000">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section filter-grid">
+                    <p class="section-name">Сетка:</p>
+                    <ul>
+                        <li>
+                            
+                                <input type="radio" name="" id="radio1" class="radio">
+                                <label for="radio">Адаптивная</label>
+                        </li>
+                        <li>
+                            
+                                <input type="radio" name="" id="radio2" class="radio" checked>
+                                <label for="radio">Фиксированная</label>
+                        </li>
+                        <li>
+                            
+                                <input type="radio" name="" id="radio3" class="radio">
+                                <label for="radio">Резиновая</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-section filter-features">
+                    <p class="section-name">Особенности:</p>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="checkbox" id="checkbox1" class="checkbox">
+                            <label for="checkbox1">Слайдер</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="checkbox" id="checkbox2" class="checkbox">
+                            <label for="checkbox2">Блок преимуществ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="checkbox" id="checkbox3" class="checkbox">
+                            <label for="checkbox3">Новости</label>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <input class="btn" type="submit" value="Показать">
+            </form>
+            <!--END ФИЛЬТР-->
+
+            <div class="templates-block right">
+                <div class="templates-header clearfix">
+	                <div class="section-name left">Сортировать:</div>
+	                <div class="sort-section right">
+	                    <ul class="left">
+	                        <li class="checked">По цене</li>
+	                        <li>По типу</li>
+	                        <li>По названию</li>
+	                    </ul>
+	                    <div class="right sort-toggle">
+	                        <span class="arrow-bottom checked"></span>
+	                        <span class="arrow-top"></span>
+	                    </div>
+	                </div>
+                </div>
+                <div class="templates-cards">
+					<div class="template left">
+                        <div class="template-header">
+                            <div class="template-controls">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="template-body"><img src="img/goods/sedona.png"></div>
+                    </div>
+					<div class="template left">
+                        <div class="template-header">
+                            <div class="template-controls">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="template-body"><img src="img/goods/pink.png"></div>
+                    </div>
+					<div class="template left">
+                        <div class="template-header">
+                            <div class="template-controls">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="template-body"><img src="img/goods/borodinski.png"></div>
+                    </div>
+                    <div class="template left">
+                        <div class="template-header">
+                            <div class="template-controls">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="template-body"><img src="img/goods/mishka.png"></div>
+                    </div>
+                    <div class="template left">
+                        <div class="template-header">
+                            <div class="template-controls">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="template-body"><img src="img/goods/obuchenie.png"></div>
+                    </div>
+                    <div class="template left">
+                        <div class="template-header">
+                            <div class="template-controls">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="template-body">
+                            <img src="img/goods/kvast.png">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </main>
+        <div class="map">
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts-title">Nёrds design studio</div>
+                    <p>191186, Санкт-Петербург,<br>
+                        ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7(812)275-75-75</p>
+                    <a class="btn" href="/feedback">Напишите нам</a>
+                </div>
             </div>
         </div>
-
-    </div>
-</header>
-<main class="container clearfix">
-    <div class="filter-left">
-        <p>Стоимость:</p>
-    </div>
-    <div class="templates-right">
-        <p>Сортировать:</p>
-    </div>
-
-</main>
-<div class="map">
-    <div class="container">
-        <div class="contacts">
-            <div class="contacts-title">Nёrds design studio</div>
-            <p>191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7(812)275-75-75</p>
-            <a class="btn" href="/feedback">Напишите нам</a>
-        </div>
-    </div>
-</div>
-<footer class="container">
-    <section class="footer-social">
-        <a href="#" class="social-btn social-btn-vk">Вконтакте</a><!--в таком случае имею право-->
-        <a href="#" class="social-btn social-btn-fb">Фейсбук</a><!-- в css текст скрыть-->
-        <a href="#" class="social-btn social-btn-inst">Инстаграм</a><!--а вместо него показать иконку бэкграундом-->
-    </section>
-    <section class="footer-promo">
-        <div class="footer-promo-title">Давайте дружить, это выгодно!</div>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <!--<a class="btn" href="http://htmlacademy.ru">HTMLAcademy.ru</a>-->
-    </section>
-</footer>
-</body>
+        <footer class="container">
+            <section class="footer-social">
+                <a href="#" class="social-btn social-btn-vk">Вконтакте</a><!--в таком случае имею право-->
+                <a href="#" class="social-btn social-btn-fb">Фейсбук</a><!-- в css текст скрыть-->
+                <a href="#" class="social-btn social-btn-inst">Инстаграм</a><!--а вместо него показать иконку бэкграундом-->
+            </section>
+            <section class="footer-promo">
+                <div class="footer-promo-title">Давайте дружить, это выгодно!</div>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+                <!--<a class="btn" href="http://htmlacademy.ru">HTMLAcademy.ru</a>-->
+            </section>
+        </footer>
+    </body>
 </html>

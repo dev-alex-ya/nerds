@@ -15,6 +15,6 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/ya_alex/nerds#readme",
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "sass": "^1.7.1"
   }
 }
