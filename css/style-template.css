@@ -126,3 +126,41 @@
 	margin-right: 9px;
 	border-radius: 50%
 }
+
+.templates-footer {
+
+}
+
+.templates-footer ul {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.templates-footer li {
+	display: inline-block;
+	margin-right: 10px;
+	
+}
+
+.templates-footer .btn {
+	
+	background-color: #eeeeee;
+	color: #000;
+	/*box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: auto;
+	height: 50px;
+	width: 50px;*/
+}
+/*
+.templates-footer > a.btn {
+	display: inline-block;
+
+}*/
+.templates-footer .wrapper {
+	display: inline-block;
+}
